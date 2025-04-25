@@ -45,10 +45,10 @@ The `instruction` parameter is arguably the most critical for shaping an `LlmAge
 
 **State:**
 
-* The instruction is a string template, you can use the '{var}' syntax to insert dynamic values into the instruction.
-* '{var}' is used to insert the value of the state variable named var.
-* {artifact.var} is used to insert the text content of the artifact named var.
-* If the state variable or artifact does not exist, the agent will raise an error. If you want to ignore the error, you can append a ? to the variable name, e.g. '{var?}'.
+* The instruction is a string template, you can use the `{var}` syntax to insert dynamic values into the instruction.
+* `{var}` is used to insert the value of the state variable named var.
+* `{artifact.var}` is used to insert the text content of the artifact named var.
+* If the state variable or artifact does not exist, the agent will raise an error. If you want to ignore the error, you can append a ? to the variable name, e.g. `{var?}`.
 
 ```python
 # Example: Adding instructions
